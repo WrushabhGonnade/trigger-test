@@ -2,3 +2,5 @@ steps:
 - name: "python"
   entrypoint: "python"
   args: ["app.py"]
+- name: 'gcr.io/cloud-builders/python'
+  args: ['-m', 'pip', 'install', '-r', 'YOUR-PATH-TO/requirements.txt']
