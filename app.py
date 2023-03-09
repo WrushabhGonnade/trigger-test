@@ -30,6 +30,7 @@ print(latest_commit_message)
 project_id=project_id
 version="2020.1.10"
 release_note=latest_commit_message
+print("done")
 
 data = {
     'ProjectId': project_id,
