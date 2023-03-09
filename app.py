@@ -29,7 +29,7 @@ if not project_id:
 latest_commit_message="ttttt"
 
 project_id=project_id
-version="2020.1.10"
+version="2020.1.12"
 release_note=latest_commit_message
 print("done")
 
