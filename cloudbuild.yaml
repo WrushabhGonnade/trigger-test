@@ -14,5 +14,5 @@ steps:
 #       cd /workspace/repo
 #       python -c 'from git import Repo; Repo().git.refresh()'
 
-# - name: 'gcr.io/cloud-builders/docker'
-#   args: ['run', '-v', '/workspace:/app', '-w', '/app', 'my-app', 'python', 'app.py']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['run', '-v', '/workspace:/app', '-w', '/app', 'my-app', 'python', 'app.py']
