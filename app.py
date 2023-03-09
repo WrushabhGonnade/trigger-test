@@ -1,7 +1,7 @@
 import requests
 import requests
 import json
-import git
+# import git
 
 project_name = 'Hello World'
 api_key="API-FURAOUECZ3M6VELG044KJRRZB9VFYPB"
@@ -23,9 +23,10 @@ print("Project Id: ",project_id)
 if not project_id:
     raise ValueError(f"No project found with name '{project_name}'.")
 
-repo = git.Repo('.')
-latest_commit_message = repo.head.commit.message
-print(latest_commit_message)
+# repo = git.Repo('.')
+# latest_commit_message = repo.head.commit.message
+# print(latest_commit_message)
+latest_commit_message="ttttt"
 
 project_id=project_id
 version="2020.1.10"
