@@ -7,5 +7,11 @@ steps:
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['run', '-v', '/workspace:/app', '-w', '/app', 'my-app', 'python', 'app.py']
-  # testing
-
+- name: 'python:3.9'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      pip install gitpython
+      cd /workspace/repo
+      python -c 'from git import Repo; Repo().git.refresh()'
