@@ -6,5 +6,5 @@ steps:
   args: ['run', '-v', '/workspace:/app', '-w', '/app', 'my-app', 'pip', 'install', '-r', 'requirements.txt']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['run', '-v', '/workspace:/app', '-w', '/app', 'my-app', 'python', 'app.py']
+  args: ['run', '-v', '/workspace:/app', '-w', '/app', 'app', 'python', 'app.py']
 
