@@ -2,9 +2,3 @@ steps:
 - name: "python"
   entrypoint: "python"
   args: ["app.py"]
-- name: 'gcr.io/cloud-builders/curl'
-  entrypoint: 'bash'
-  args:
-  - '-c'
-  - |
-    curl -X POST -H "X-Octopus-ApiKey: $OCTOPUS_API_KEY" -H "Content-Type: application/json" -d "{\"Version\":\"$(date +%Y%m%d%H%M%S)\", \"SelectedPackages\":[{\"StepName\":\"build\",\"ActionName\":\"publish\"}]}" https://your-octopus-server/api/projects/$OCTOPUS_PROJECT_ID/releases
